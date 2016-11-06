@@ -1,0 +1,169 @@
+
+/*
+Name: Aziz Aldawk
+Date: 11/6/2016
+Homework #7.
+Action: There is a program written that reads from standard input and keeps
+        track of words that are read.
+*/
+#include <iostream>
+#include <iomanip>
+#include <ctype.h>
+#include "string2.cpp"
+
+using namespace std;
+
+const int MAX_WORD_LENGTH = 254;
+
+// The type definition below permits much easier prototyping of
+// functions that pass arrays of strings.
+
+char Length[MAX_WORD_LENGTH + 1]; //  + 1 for null terminator.
+
+
+void WriteWords(String  Word[],
+	int     Count[],
+	int     TotalWordCount,
+	int     DistinctWordCount);
+
+void StoreWord(String  NewWord,
+	String  Word[],
+	int     Count[],
+	int    &TotalWordCount,
+	int    &DistinctWordCount,
+	int     MaxWordCount);
+
+/***************************  main  ***********************************/
+
+void main()
+{
+	const  int MAX_WORD_COUNT = 130;
+
+	String  NewWord,
+		Word[MAX_WORD_COUNT + 1] = { "", "" };       // ALWAYS allow 1 extra slot!
+
+	int     Count[MAX_WORD_COUNT + 1] = { 0 }, // Initialize array to zeros
+		DistinctWordCount = 0,
+		TotalWordCount = 0;
+
+
+	cin >> NewWord;    //get first word.
+
+	while (NewWord.Length() != 0)            //  While NewWord is not null string
+	{
+		StoreWord(NewWord, Word, Count, TotalWordCount,
+			DistinctWordCount, MAX_WORD_COUNT);
+
+		cin >> NewWord; // get the word next. 
+ 	}
+
+	WriteWords(Word, Count, TotalWordCount, DistinctWordCount);
+
+}
+
+
+/***************************  StoreWord   ********************************
+
+DESCRIPTION  Adds a string NewWord (holding up to MAX_WORD_LENGTH
+characters) to the end of the array Word.
+
+PARAMETERS   NewWord            The string (array of char) to be added
+Word               An array of String (char[MAX_WORD_LENGTH])
+DistinctWordCount  The number of different words in the array
+TotalWordCount     The total number of word in the file
+MaxWordCount       The max number of words that can be stored
+in the array Word. If DistinctWordCount ==
+MaxWordCount, the function is exited.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+void StoreWord(String  NewWord,
+	String  Word[],
+	int     Count[],
+	int    &TotalWordCount,
+	int    &DistinctWordCount,
+	int     MaxWordCount)
+{
+	int i, k = 0;
+
+	while (NewWord > Word[k] && k < DistinctWordCount)
+		++k;
+
+	// Assert:  k is NewWord's correct position in the ordered array Word
+
+	if (NewWord == Word[k])  // NewWord is already there
+	{
+		++Count[k];
+		++TotalWordCount;
+	}
+
+	else if (DistinctWordCount < MaxWordCount) // Room for a new word
+	{
+		++DistinctWordCount;  // If this line reached, found new word
+		++TotalWordCount;
+
+		for (i = DistinctWordCount - 1; i > k; --i) // Make room for
+		{                                             //  NewWord
+			(Word[i], Word[i - 1]);
+			Count[i] = Count[i - 1];
+		}
+		(Word[k]= NewWord); // Store NewWord in array
+		Count[k] = 1;
+	}
+}
+
+/***************************  WriteWords   ********************************
+
+DESCRIPTION  Writes the strings in the array Word to standard output.
+The words are left justified. After WORDS_PER_ROW words have
+been written a new line is started.
+
+PARAMETERS   Word       An array of String (char[MAX_WORD_LENGTH])
+WordCount  The number of words in the array
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+void WriteWords(String  Word[],
+	int     Count[],
+	int     TotalWordCount,
+	int     DistinctWordCount)
+{
+	const char *Header1 = "    Word          Count | ",
+		*Header2 = "                               | ",
+		*Separator = "   | ";
+
+	const int WORD_FW = 17;
+	const int COUNT_FW = 4;
+	const int WORDS_PER_ROW = 3;
+
+	int C;
+
+	cout << "\n\n";
+
+	if (TotalWordCount == 0)
+		return;
+
+	for (C = 1; C <= WORDS_PER_ROW; ++C)
+		cout << Header1;
+	cout << endl;
+
+	for (C = 1; C <= WORDS_PER_ROW; ++C)
+		cout << Header2;
+	cout << endl;
+
+	int N = 0;
+
+	while (N < DistinctWordCount)
+	{
+		for (C = 1; C <= WORDS_PER_ROW && N < DistinctWordCount; ++C)
+		{
+			cout << setiosflags(ios::left) << setw(WORD_FW) << Word[N];
+			cout << setiosflags(ios::right) << setw(COUNT_FW) << Count[N];
+			cout << Separator;
+			cout << resetiosflags(ios::right);
+			++N;
+		}
+		cout << endl;
+	}
+
+	cout << "\nTotal    Word Count : " << TotalWordCount << endl;
+	cout << "\nDistinct Word Count : " << DistinctWordCount << endl;
+}
