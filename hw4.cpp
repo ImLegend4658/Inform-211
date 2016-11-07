@@ -1,5 +1,5 @@
 /*******************************************************************
-Author  :  Matt Holloway
+Author  :  
 Date    :
 Homework:
 Compiler:  Visual C++ .NET
