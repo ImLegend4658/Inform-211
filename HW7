@@ -1,10 +1,9 @@
-
 /*
 Name: Aziz Aldawk
 Date: 11/6/2016
 Homework #7.
 Action: There is a program written that reads from standard input and keeps
-        track of words that are read.
+track of words that are read.
 */
 #include <iostream>
 #include <iomanip>
@@ -55,7 +54,7 @@ void main()
 			DistinctWordCount, MAX_WORD_COUNT);
 
 		cin >> NewWord; // get the word next. 
- 	}
+	}
 
 	WriteWords(Word, Count, TotalWordCount, DistinctWordCount);
 
@@ -85,7 +84,7 @@ void StoreWord(String  NewWord,
 {
 	int i, k = 0;
 
-	while (NewWord > Word[k] && k < DistinctWordCount)
+	while (NewWord < Word[k] && k < DistinctWordCount)
 		++k;
 
 	// Assert:  k is NewWord's correct position in the ordered array Word
@@ -103,10 +102,10 @@ void StoreWord(String  NewWord,
 
 		for (i = DistinctWordCount - 1; i > k; --i) // Make room for
 		{                                             //  NewWord
-			(Word[i], Word[i - 1]);
+			(Word[i] = Word[i - 1]);
 			Count[i] = Count[i - 1];
 		}
-		(Word[k]= NewWord); // Store NewWord in array
+		(Word[k] = NewWord); // Store NewWord in array
 		Count[k] = 1;
 	}
 }
