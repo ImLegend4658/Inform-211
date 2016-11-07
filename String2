@@ -27,7 +27,6 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =*/
 #include <iostream>
 #include <ctype.h>
-
 using namespace std;
 
 class String
@@ -63,7 +62,7 @@ public:
 
   int operator== (const String& Rhs);
 
-  int operator>    (const String& Rhs);
+  int operator<     (const String& Rhs);
 
   String operator+  (const char Rhs[]);
 
@@ -89,7 +88,6 @@ public:
     String S = P;         //  Where declaration of P is "char* P"
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-
 String::String (const char P[])
 {
   int k = 0;
@@ -102,8 +100,6 @@ String::String (const char P[])
 
   Len = k;
 }
-
-
 
 /***************************  operator=    ******************************
 
@@ -133,7 +129,6 @@ String::String (const char P[])
    is a reference to the value of the hidden parameter.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-/*
 String& String::operator= (const char RightSide[])
 {
   int k = 0;
@@ -147,7 +142,6 @@ String& String::operator= (const char RightSide[])
 
   return *this;   // Dereference "this", the pointer to left hand side
 }
-*/
 
 /**************************  operator!=  *********************************
 
@@ -158,7 +152,6 @@ String& String::operator= (const char RightSide[])
   need not be made upon entry to this function.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-/*
 int String::operator!= (const String& Rhs)
 {
   if ( Len != Rhs.Len )    // Are not equal if lengths are different
@@ -170,7 +163,6 @@ int String::operator!= (const String& Rhs)
 
   return 0;   // If we got to this line, all chars are the same
 }
-*/
 
 /**************************  operator==  *********************************
 
@@ -198,7 +190,7 @@ int String::operator== (const String& Rhs)
    Returns a true if Lhs < Rhs, i.e. if the left hand side of "<"
    comes after the right hand side using the usual rules for ordering.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-int String::operator> (const String& Rhs)
+int String::operator< (const String& Rhs)
 {
   int k = 0;
 
@@ -235,7 +227,6 @@ int String::operator> (const String& Rhs)
   See comments above operator<< for more information on overloading I/O
   operators, including an explanation as to why this must be a friend.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-
 istream& operator>> (istream& In, String &S)
 {
   char Ch;
@@ -259,7 +250,6 @@ istream& operator>> (istream& In, String &S)
 
   return In;   //  Permits cascading of operator
 }
-
 
 /*************************** operator <<    *****************************
 
@@ -294,12 +284,11 @@ istream& operator>> (istream& In, String &S)
    but this will not work with the setw manipulator.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-/*
 ostream& operator<< (ostream& Sout, const String &S)
 {
   char TempStr[S.MAX_LENGTH];
-
-  for ( int k = 0; k < S.Len; ++k )
+  int k;
+  for (  k = 0; k < S.Len; ++k )
     TempStr[k] = S.Chr[k];          // Create copy of String
 
   TempStr[k] = 0;                   // Need null terminator for next line
@@ -308,7 +297,6 @@ ostream& operator<< (ostream& Sout, const String &S)
 
   return Sout;                      // Support cascading of <<
 }
-*/
 
 /************************  operator+    **********************************
 
@@ -317,7 +305,6 @@ ostream& operator<< (ostream& Sout, const String &S)
    the extra characters are discarded.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-/*
 String String::operator+ (const String& Rhs)
 {
   String Temp;
@@ -334,7 +321,6 @@ String String::operator+ (const String& Rhs)
 
   return Temp;
 }
-*/
 
 /************************  operator+    **********************************
 
@@ -348,7 +334,6 @@ String String::operator+ (const String& Rhs)
    null terminated chars.
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
-/*
 String String::operator+ (const char Rhs[])
 {
   String Temp;
@@ -365,4 +350,3 @@ String String::operator+ (const char Rhs[])
 
   return Temp;
 }
-*/
