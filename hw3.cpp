@@ -1,5 +1,5 @@
 /*************************************************************
-Author  :  
+Author  :  Matt Holloway
 Source File :  hw3.cpp
 Compiler:  Visual C++ .NET
 Action :  Overall program deals with the birthday paradox, which

@@ -1,5 +1,5 @@
 /*************************************************************************
-Name     : 
+Name     : Matt Holloway
 Source   :  HW2.CPP
 Compiler :  Visual C++ .NET
 DESCRIPTION:  Program designed to read in any sentence and replace the

@@ -1,5 +1,5 @@
 /******************************************************************
-Name  :
+Name  :  Matt Holloway
 Source : HW1.CPP
 Action : Program will read in from standard input and determine the
          frequency of word lengths found in input.  An appropriate
