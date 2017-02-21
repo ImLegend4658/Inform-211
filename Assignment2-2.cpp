@@ -151,3 +151,141 @@ int BinarySearch(MyID IDNumber[], int Size, int target){
 	          // user that number was not found.
 	}
 }
+
+ID Number is: 19506
+The last name is:  Aldawk 57
+ID Number is: 19975
+The last name is:  Aldawk 58
+ID Number is: 20060
+The last name is:  Aldawk 59
+ID Number is: 20237
+The last name is:  Aldawk 60
+ID Number is: 20801
+The last name is:  Aldawk 61
+ID Number is: 20830
+The last name is:  Aldawk 62
+ID Number is: 21610
+The last name is:  Aldawk 63
+ID Number is: 21953
+The last name is:  Aldawk 64
+ID Number is: 22689
+The last name is:  Aldawk 65
+ID Number is: 23337
+The last name is:  Aldawk 66
+ID Number is: 23420
+The last name is:  Aldawk 67
+ID Number is: 23671
+The last name is:  Aldawk 68
+ID Number is: 23693
+The last name is:  Aldawk 69
+ID Number is: 24038
+The last name is:  Aldawk 70
+ID Number is: 24132
+The last name is:  Aldawk 71
+ID Number is: 25075
+The last name is:  Aldawk 72
+ID Number is: 25388
+The last name is:  Aldawk 73
+ID Number is: 25453
+The last name is:  Aldawk 74
+ID Number is: 26113
+The last name is:  Aldawk 75
+ID Number is: 27226
+The last name is:  Aldawk 76
+ID Number is: 27375
+The last name is:  Aldawk 77
+ID Number is: 27411
+The last name is:  Aldawk 78
+ID Number is: 27804
+The last name is:  Aldawk 79
+ID Number is: 27977
+The last name is:  Aldawk 80
+ID Number is: 28051
+The last name is:  Aldawk 81
+ID Number is: 28158
+The last name is:  Aldawk 82
+ID Number is: 28381
+The last name is:  Aldawk 83
+ID Number is: 28517
+The last name is:  Aldawk 84
+ID Number is: 28646
+The last name is:  Aldawk 85
+ID Number is: 28741
+The last name is:  Aldawk 86
+ID Number is: 28809
+The last name is:  Aldawk 87
+ID Number is: 28949
+The last name is:  Aldawk 88
+ID Number is: 29333
+The last name is:  Aldawk 89
+ID Number is: 29361
+The last name is:  Aldawk 90
+ID Number is: 29636
+The last name is:  Aldawk 91
+ID Number is: 29641
+The last name is:  Aldawk 92
+ID Number is: 30100
+The last name is:  Aldawk 93
+ID Number is: 30733
+The last name is:  Aldawk 94
+ID Number is: 30854
+The last name is:  Aldawk 95
+ID Number is: 31164
+The last name is:  Aldawk 96
+ID Number is: 31311
+The last name is:  Aldawk 97
+ID Number is: 31614
+The last name is:  Aldawk 98
+ID Number is: 31986
+The last name is:  Aldawk 99
+ID Number is: 32381
+The last name is:  Aldawk 100
+ID Number is: 32583
+Please enter ID number you want to search!! (enter 0 to quit)
+802
+This ID number: 802 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+502
+The location is: 2
+This ID number: 502 was found
+Please enter ID number you want to search!! (enter 0 to quit)
+11503
+The location is: 29
+This ID number: 11503 was found
+Please enter ID number you want to search!! (enter 0 to quit)
+11283
+This ID number: 11283 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+31311
+The location is: 96
+This ID number: 31311 was found
+Please enter ID number you want to search!! (enter 0 to quit)
+32583
+The location is: 100
+This ID number: 32583 was found
+Please enter ID number you want to search!! (enter 0 to quit)
+17168
+The location is: 49
+This ID number: 17168 was found
+Please enter ID number you want to search!! (enter 0 to quit)
+58
+This ID number: 58 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+1356
+This ID number: 1356 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+4747
+This ID number: 4747 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+11111
+This ID number: 11111 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+0
+Press any key to continue . . .
+
+
+
+
+
+
+
