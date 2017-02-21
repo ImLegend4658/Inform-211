@@ -42,7 +42,7 @@ int main(){
 	//make copy of first and last name many times. 
 	for (int i = 0; i < Size; i++){
 		strcpy_s(IDNumber[i].FirstName, "Aziz");
-		strcpy_s(IDNumber[i].LastName, "LEGEND");
+		strcpy_s(IDNumber[i].LastName, "Aldawk");
 	}	
 	//Function call
 	InitializeArray(IDNumber, Size);
@@ -108,8 +108,8 @@ void SortTheArray(MyID IDNumber[], int Size){
 
 	for (int i = 0; i < Size; i++)
 	{		
-		cout << IDNumber[i].FirstName << " ";
-		cout << IDNumber[i].LastName << " " << i+1 << endl;
+		//cout << IDNumber[i].FirstName << " ";
+		cout <<  "The last name is:  "<< IDNumber[i].LastName <<" "<< i + 1 << endl;
 		cout << "ID Number is: "<< IDNumber[i].IdNumber << endl;
 	}
 }  
