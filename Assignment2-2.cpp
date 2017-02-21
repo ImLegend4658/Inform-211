@@ -152,138 +152,257 @@ int BinarySearch(MyID IDNumber[], int Size, int target){
 	}
 }
 
-ID Number is: 19506
+The last name is:  Aldawk 1
+ID Number is: 127
+The last name is:  Aldawk 2
+ID Number is: 176
+The last name is:  Aldawk 3
+ID Number is: 207
+The last name is:  Aldawk 4
+ID Number is: 353
+The last name is:  Aldawk 5
+ID Number is: 435
+The last name is:  Aldawk 6
+ID Number is: 536
+The last name is:  Aldawk 7
+ID Number is: 695
+The last name is:  Aldawk 8
+ID Number is: 777
+The last name is:  Aldawk 9
+ID Number is: 804
+The last name is:  Aldawk 10
+ID Number is: 893
+The last name is:  Aldawk 11
+ID Number is: 1742
+The last name is:  Aldawk 12
+ID Number is: 1917
+The last name is:  Aldawk 13
+ID Number is: 2023
+The last name is:  Aldawk 14
+ID Number is: 2371
+The last name is:  Aldawk 15
+ID Number is: 3660
+The last name is:  Aldawk 16
+ID Number is: 3765
+The last name is:  Aldawk 17
+ID Number is: 4183
+The last name is:  Aldawk 18
+ID Number is: 4534
+The last name is:  Aldawk 19
+ID Number is: 5147
+The last name is:  Aldawk 20
+ID Number is: 5397
+The last name is:  Aldawk 21
+ID Number is: 5570
+The last name is:  Aldawk 22
+ID Number is: 5894
+The last name is:  Aldawk 23
+ID Number is: 6152
+The last name is:  Aldawk 24
+ID Number is: 6482
+The last name is:  Aldawk 25
+ID Number is: 6884
+The last name is:  Aldawk 26
+ID Number is: 7018
+The last name is:  Aldawk 27
+ID Number is: 7395
+The last name is:  Aldawk 28
+ID Number is: 7723
+The last name is:  Aldawk 29
+ID Number is: 7868
+The last name is:  Aldawk 30
+ID Number is: 8183
+The last name is:  Aldawk 31
+ID Number is: 8498
+The last name is:  Aldawk 32
+ID Number is: 8655
+The last name is:  Aldawk 33
+ID Number is: 8964
+The last name is:  Aldawk 34
+ID Number is: 9044
+The last name is:  Aldawk 35
+ID Number is: 9075
+The last name is:  Aldawk 36
+ID Number is: 9352
+The last name is:  Aldawk 37
+ID Number is: 9603
+The last name is:  Aldawk 38
+ID Number is: 9645
+The last name is:  Aldawk 39
+ID Number is: 10039
+The last name is:  Aldawk 40
+ID Number is: 10087
+The last name is:  Aldawk 41
+ID Number is: 11491
+The last name is:  Aldawk 42
+ID Number is: 11601
+The last name is:  Aldawk 43
+ID Number is: 11675
+The last name is:  Aldawk 44
+ID Number is: 11881
+The last name is:  Aldawk 45
+ID Number is: 12234
+The last name is:  Aldawk 46
+ID Number is: 12744
+The last name is:  Aldawk 47
+ID Number is: 13763
+The last name is:  Aldawk 48
+ID Number is: 13950
+The last name is:  Aldawk 49
+ID Number is: 14272
+The last name is:  Aldawk 50
+ID Number is: 14433
+The last name is:  Aldawk 51
+ID Number is: 14945
+The last name is:  Aldawk 52
+ID Number is: 14952
+The last name is:  Aldawk 53
+ID Number is: 15221
+The last name is:  Aldawk 54
+ID Number is: 15952
+The last name is:  Aldawk 55
+ID Number is: 16294
+The last name is:  Aldawk 56
+ID Number is: 16913
 The last name is:  Aldawk 57
-ID Number is: 19975
+ID Number is: 17560
 The last name is:  Aldawk 58
-ID Number is: 20060
+ID Number is: 17726
 The last name is:  Aldawk 59
-ID Number is: 20237
+ID Number is: 18024
 The last name is:  Aldawk 60
-ID Number is: 20801
+ID Number is: 18441
 The last name is:  Aldawk 61
-ID Number is: 20830
+ID Number is: 19206
 The last name is:  Aldawk 62
-ID Number is: 21610
+ID Number is: 19385
 The last name is:  Aldawk 63
-ID Number is: 21953
+ID Number is: 19791
 The last name is:  Aldawk 64
-ID Number is: 22689
+ID Number is: 19858
 The last name is:  Aldawk 65
-ID Number is: 23337
+ID Number is: 19958
 The last name is:  Aldawk 66
-ID Number is: 23420
+ID Number is: 20183
 The last name is:  Aldawk 67
-ID Number is: 23671
+ID Number is: 20341
 The last name is:  Aldawk 68
-ID Number is: 23693
+ID Number is: 21235
 The last name is:  Aldawk 69
-ID Number is: 24038
+ID Number is: 21560
 The last name is:  Aldawk 70
-ID Number is: 24132
+ID Number is: 21662
 The last name is:  Aldawk 71
-ID Number is: 25075
+ID Number is: 21707
 The last name is:  Aldawk 72
-ID Number is: 25388
+ID Number is: 21770
 The last name is:  Aldawk 73
-ID Number is: 25453
+ID Number is: 22973
 The last name is:  Aldawk 74
-ID Number is: 26113
+ID Number is: 23054
 The last name is:  Aldawk 75
-ID Number is: 27226
+ID Number is: 23481
 The last name is:  Aldawk 76
-ID Number is: 27375
+ID Number is: 23566
 The last name is:  Aldawk 77
-ID Number is: 27411
+ID Number is: 24386
 The last name is:  Aldawk 78
-ID Number is: 27804
+ID Number is: 25069
 The last name is:  Aldawk 79
-ID Number is: 27977
+ID Number is: 25535
 The last name is:  Aldawk 80
-ID Number is: 28051
+ID Number is: 26482
 The last name is:  Aldawk 81
-ID Number is: 28158
+ID Number is: 26640
 The last name is:  Aldawk 82
-ID Number is: 28381
+ID Number is: 26640
 The last name is:  Aldawk 83
-ID Number is: 28517
+ID Number is: 26939
 The last name is:  Aldawk 84
-ID Number is: 28646
+ID Number is: 27201
 The last name is:  Aldawk 85
-ID Number is: 28741
+ID Number is: 28051
 The last name is:  Aldawk 86
-ID Number is: 28809
+ID Number is: 28228
 The last name is:  Aldawk 87
-ID Number is: 28949
+ID Number is: 28552
 The last name is:  Aldawk 88
-ID Number is: 29333
+ID Number is: 28686
 The last name is:  Aldawk 89
-ID Number is: 29361
+ID Number is: 28818
 The last name is:  Aldawk 90
-ID Number is: 29636
+ID Number is: 28855
 The last name is:  Aldawk 91
-ID Number is: 29641
+ID Number is: 29152
 The last name is:  Aldawk 92
-ID Number is: 30100
+ID Number is: 29396
 The last name is:  Aldawk 93
-ID Number is: 30733
+ID Number is: 29770
 The last name is:  Aldawk 94
-ID Number is: 30854
+ID Number is: 30159
 The last name is:  Aldawk 95
-ID Number is: 31164
+ID Number is: 30242
 The last name is:  Aldawk 96
-ID Number is: 31311
+ID Number is: 30578
 The last name is:  Aldawk 97
-ID Number is: 31614
+ID Number is: 31785
 The last name is:  Aldawk 98
-ID Number is: 31986
+ID Number is: 31802
 The last name is:  Aldawk 99
-ID Number is: 32381
+ID Number is: 31960
 The last name is:  Aldawk 100
-ID Number is: 32583
+ID Number is: 32570
 Please enter ID number you want to search!! (enter 0 to quit)
-802
-This ID number: 802 was not found
+158
+This ID number: 158 was not found
 Please enter ID number you want to search!! (enter 0 to quit)
-502
-The location is: 2
-This ID number: 502 was found
+3257
+This ID number: 3257 was not found
 Please enter ID number you want to search!! (enter 0 to quit)
-11503
-The location is: 29
-This ID number: 11503 was found
-Please enter ID number you want to search!! (enter 0 to quit)
-11283
-This ID number: 11283 was not found
-Please enter ID number you want to search!! (enter 0 to quit)
-31311
-The location is: 96
-This ID number: 31311 was found
-Please enter ID number you want to search!! (enter 0 to quit)
-32583
+32570
 The location is: 100
-This ID number: 32583 was found
+This ID number: 32570 was found
 Please enter ID number you want to search!! (enter 0 to quit)
-17168
-The location is: 49
-This ID number: 17168 was found
+7018
+The location is: 26
+This ID number: 7018 was found
 Please enter ID number you want to search!! (enter 0 to quit)
-58
-This ID number: 58 was not found
+207
+The location is: 3
+This ID number: 207 was found
 Please enter ID number you want to search!! (enter 0 to quit)
-1356
-This ID number: 1356 was not found
+17726
+The location is: 58
+This ID number: 17726 was found
 Please enter ID number you want to search!! (enter 0 to quit)
-4747
-This ID number: 4747 was not found
+258
+This ID number: 258 was not found
 Please enter ID number you want to search!! (enter 0 to quit)
-11111
-This ID number: 11111 was not found
+100
+This ID number: 100 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+87
+This ID number: 87 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+52
+This ID number: 52 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+51
+This ID number: 51 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+48
+This ID number: 48 was not found
+Please enter ID number you want to search!! (enter 0 to quit)
+127
+The location is: 1
+This ID number: 127 was found
+Please enter ID number you want to search!! (enter 0 to quit)
+695
+The location is: 7
+This ID number: 695 was found
 Please enter ID number you want to search!! (enter 0 to quit)
 0
 Press any key to continue . . .
-
-
 
 
 
