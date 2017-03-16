@@ -1,0 +1,60 @@
+const int IMGSIZE = 512;
+struct  img
+{
+	int id;
+	char pxls[IMGSIZE][IMGSIZE];
+	img* next;
+};
+
+void clear_Pxls(char pxls[IMGSIZE][IMGSIZE]);
+
+int add_head(img*, int T);
+
+int main(){
+
+	img* head = NULL;
+	int T=20; 
+
+
+	 add_head(head, T);
+
+	 cout << head; 
+}
+
+int add_head(img* head, int T){
+
+
+	img* AddHead;
+	//img* head;
+
+	AddHead = head; 
+
+	while (AddHead->next != NULL)
+		AddHead = AddHead->next;
+
+	AddHead->next = new img;
+
+
+	if (AddHead->next == NULL)
+
+		return 0; 
+	else
+
+	{
+		AddHead = AddHead->next;
+		AddHead->id = T;
+		clear_Pxls(AddHead->next->pxls);
+		AddHead->next = NULL;
+		return 1; 
+	}
+}
+
+
+
+void clear_Pxls(char pxls[IMGSIZE][IMGSIZE])
+{
+	for (int i = 0; i < IMGSIZE; i++)
+	for (int j = 0; j < IMGSIZE; j++)
+		pxls[i][j] = 0;
+
+}
