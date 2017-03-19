@@ -223,9 +223,7 @@ void print_list(img* head)
 
 =================================================================================================
 	
-	output 1: 
-
-Head in addtail = 003CA968
+	Head in addtail = 0065A968
 Debug: please print this
 ID= 1
 ID= 300
@@ -240,13 +238,11 @@ ID= 100
 ID= 200
 Debug: please print this
 ID= 200
-Press any key to continue . . .
 
-	
-	output 2: 
-Head in addtail = 0032A968
+you want to continue press y
+y
 Debug: please print this
-ID= 1
+ID= 200
 ID= 300
 ID= 100
 ID= 200
@@ -254,18 +250,16 @@ Please enter the node number, need to be delete it!!
 Dont forget to choose number 1, 2, or 3 only
 2
 Debug: please print this
-ID= 1
+ID= 200
 ID= 300
 ID= 200
 Debug: please print this
 ID= 200
-Press any key to continue . . .
 
-
-output 3: 
-Head in addtail = 0043A968
+you want to continue press y
+y
 Debug: please print this
-ID= 1
+ID= 200
 ID= 300
 ID= 100
 ID= 200
@@ -273,12 +267,18 @@ Please enter the node number, need to be delete it!!
 Dont forget to choose number 1, 2, or 3 only
 3
 Debug: please print this
-ID= 1
+ID= 200
 ID= 300
 ID= 100
 Debug: please print this
 ID= 100
+
+you want to continue press y
+no
 Press any key to continue . . .
+
+
+
 
 
 
