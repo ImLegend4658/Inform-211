@@ -31,20 +31,29 @@ int main(){
 	// initialize head on the beginning. 
 	img* head = initHead();
 	//function call for link list.
-	add_tail(head);
-	add_head(head);
-	add_id(head, head->id);
 
-	print_list(head); // print the link list. 
+	char y = 'Y';
+	do{
+		add_tail(head);
+		add_head(head);
+		add_id(head, head->id);
 
-	delete_id(head, head->id);// function call
+		print_list(head); // print the link list. 
 
-	print_list(head); //print the list.
-	//function call
-	delete_head(head);
-	delete_tail(head);
+		delete_id(head, head->id);// function call
 
-	print_list(head); //print the list.
+		print_list(head); //print the list.
+		//function call
+		delete_head(head);
+		delete_tail(head);
+
+		print_list(head); //print the list.
+		cout << endl; 
+
+		//Ask user if need to repeat or contiune or not.
+		cout << "you want to continue press y" << endl; 
+		cin >> y;
+	} while (y == 'y' || y == 'Y');
 
 	 system("pause"); // please pause program
 }
@@ -218,7 +227,6 @@ void print_list(img* head)
 		head = head->next;
 	}
 }
-
 
 
 =================================================================================================
