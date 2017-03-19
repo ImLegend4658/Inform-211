@@ -79,7 +79,7 @@ int add_tail(img* head){
 		temp1 = temp1->next; 
 
 	img* temp2 = new img; 
-	temp2->id = 5;
+	temp2->id = 100;
 	temp2->next = NULL;
 	temp1->next = temp2;
 	return 0;
@@ -92,7 +92,7 @@ The purpose: This function adds a new image to the head of
 int add_head(img* head){
 
  	img* temp = new img; 
-	temp->id = 10; 
+	temp->id = 200; 
 	temp->next = NULL;
 
 	if (head == NULL)
@@ -126,7 +126,7 @@ int add_id(img* head, int id){
 		temp11 = temp11->next;
  	}
 	img* temp2 = new img; 
-	temp2->id = 15;
+	temp2->id = 300;
 	temp2->next = temp11->next; 
 	temp11->next = temp2;
 	return 0; 
@@ -136,13 +136,13 @@ The purpose: This function removes the images with a given
 			 id in a linked list, and deletes, it's memory. 
 ==============================================================*/
 int delete_id(img* head, int id){
-
 	img* node = new img; 
 	node = head; 
  	img* OldNode = node; 
 	int num; 
 	// ask user which node want to be delete it!
-	cout << "Please enter the node number" << endl; 
+	cout << "Please enter the node number, need to be delete it!!" << endl
+		<< "Dont forget to choose number 1, 2, or 3 only" << endl; 
 	cin >> num; // prompt from user. 
 	for (int i = 0; i < num; i++)
 	{
@@ -218,6 +218,67 @@ void print_list(img* head)
 		head = head->next;
 	}
 }
+
+
+
+=================================================================================================
+	
+	output 1: 
+
+Head in addtail = 003CA968
+Debug: please print this
+ID= 1
+ID= 300
+ID= 100
+ID= 200
+Please enter the node number, need to be delete it!!
+Dont forget to choose number 1, 2, or 3 only
+1
+Debug: please print this
+ID= 1
+ID= 100
+ID= 200
+Debug: please print this
+ID= 200
+Press any key to continue . . .
+
+	
+	output 2: 
+Head in addtail = 0032A968
+Debug: please print this
+ID= 1
+ID= 300
+ID= 100
+ID= 200
+Please enter the node number, need to be delete it!!
+Dont forget to choose number 1, 2, or 3 only
+2
+Debug: please print this
+ID= 1
+ID= 300
+ID= 200
+Debug: please print this
+ID= 200
+Press any key to continue . . .
+
+
+output 3: 
+Head in addtail = 0043A968
+Debug: please print this
+ID= 1
+ID= 300
+ID= 100
+ID= 200
+Please enter the node number, need to be delete it!!
+Dont forget to choose number 1, 2, or 3 only
+3
+Debug: please print this
+ID= 1
+ID= 300
+ID= 100
+Debug: please print this
+ID= 100
+Press any key to continue . . .
 
 
 
