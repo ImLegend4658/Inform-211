@@ -51,7 +51,7 @@ int main(){
 		cout << endl; 
 
 		//Ask user if need to repeat or contiune or not.
-		cout << "you want to continue press y" << endl; 
+		cout << "Do you want to continue press y" << endl; 
 		cin >> y;
 	} while (y == 'y' || y == 'Y');
 
@@ -247,7 +247,7 @@ ID= 200
 Debug: please print this
 ID= 200
 
-you want to continue press y
+Do you want to continue press y
 y
 Debug: please print this
 ID= 200
@@ -264,7 +264,7 @@ ID= 200
 Debug: please print this
 ID= 200
 
-you want to continue press y
+Do you want to continue press y
 y
 Debug: please print this
 ID= 200
@@ -281,7 +281,7 @@ ID= 100
 Debug: please print this
 ID= 100
 
-you want to continue press y
+Do you want to continue press y
 no
 Press any key to continue . . .
 
