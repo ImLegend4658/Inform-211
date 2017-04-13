@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 /*===============================================================
-name: Aziz Aldawk
+Author: Aziz Aldawk and Dr. Wolfer
 Date: 3/18/2017
 Homework #3
 purpose: this program is link list with function that 
@@ -30,37 +30,28 @@ int delete_tail(img*);
 int main(){
 	// initialize head on the beginning. 
 	img* head = initHead();
-	//function call for link list.
 
-	char y = 'Y';
-	do{
 		add_tail(head);
 		add_head(head);
 		add_id(head, head->id);
 
-		print_list(head); // print the link list. 
-
 		delete_id(head, head->id);// function call
 
 		print_list(head); //print the list.
+		cout << "the id is deleted" << endl;
 		//function call
 		delete_head(head);
-		delete_tail(head);
+ 		delete_tail(head);
 
-		print_list(head); //print the list.
-		cout << endl; 
+		cout << "head and tail was deleted" << endl;
+		cout << endl; // give space between line.
 
-		//Ask user if need to repeat or contiune or not.
-		cout << "Do you want to continue press y" << endl; 
-		cin >> y;
-	} while (y == 'y' || y == 'Y');
 
 	 system("pause"); // please pause program
 }
 
-/*===================================================
-In the initHead:
-prupose: initialize the head before start creating 
+/*==================== initHead ===============================
+ prupose: initialize the head before start creating 
 		 link list in order to avoid memory leak. 
 =====================================================*/
 img* initHead(){
@@ -88,7 +79,8 @@ int add_tail(img* head){
 		temp1 = temp1->next; 
 
 	img* temp2 = new img; 
-	temp2->id = 100;
+	temp2->id = 2;
+	cout << "The Tail was added : " << temp2->id << endl;
 	temp2->next = NULL;
 	temp1->next = temp2;
 	return 0;
@@ -101,7 +93,8 @@ The purpose: This function adds a new image to the head of
 int add_head(img* head){
 
  	img* temp = new img; 
-	temp->id = 200; 
+	temp->id = 3;
+	cout << "The head was added : "<<temp->id << endl; 
 	temp->next = NULL;
 
 	if (head == NULL)
@@ -126,7 +119,7 @@ The purpose: This function adds a new images to  a linked list,
 ==============================================*/
 int add_id(img* head, int id){
 
-
+	
 	img* temp11;
 	temp11 = head; 
 
@@ -135,25 +128,22 @@ int add_id(img* head, int id){
 		temp11 = temp11->next;
  	}
 	img* temp2 = new img; 
-	temp2->id = 300;
+	temp2->id = 4;
+	cout << "the ID was added: " << temp2->id << endl; 
 	temp2->next = temp11->next; 
 	temp11->next = temp2;
 	return 0; 
 }
 /*========================= Delete id =========================
 The purpose: This function removes the images with a given
-			 id in a linked list, and deletes, it's memory. 
+			 id in a linked list, and deletes from memory. 
 ==============================================================*/
 int delete_id(img* head, int id){
 	img* node = new img; 
 	node = head; 
  	img* OldNode = node; 
-	int num; 
-	// ask user which node want to be delete it!
-	cout << "Please enter the node number, need to be delete it!!" << endl
-		<< "Dont forget to choose number 1, 2, or 3 only" << endl; 
-	cin >> num; // prompt from user. 
-	for (int i = 0; i < num; i++)
+	
+	for (int i = 0; i <1; i++)
 	{
 		OldNode = node; 
 		node = node->next;
@@ -195,7 +185,10 @@ int delete_tail(img* head){
 
 	return 0;
 }
-
+/*******************************************************
+The purpose: This function will hold space on the memory
+             for image that can be used by array. 
+********************************************************/
 void clear_Pxls(char pxls[IMGSIZE][IMGSIZE])
 {
 	for (int i = 0; i < IMGSIZE; i++)
@@ -203,9 +196,6 @@ void clear_Pxls(char pxls[IMGSIZE][IMGSIZE])
 		pxls[i][j] = 0;
 
 }
-
-
-
 /*******************************************************
 The purpose: print list is printing the results of linked list
 			to the user and show the user what is output is.
@@ -225,68 +215,9 @@ void print_list(img* head)
 	{
 		cout << "ID= " << head->id << endl;
 		head = head->next;
+
 	}
 }
-
-
-=================================================================================================
-	
-	Head in addtail = 0065A968
-Debug: please print this
-ID= 1
-ID= 300
-ID= 100
-ID= 200
-Please enter the node number, need to be delete it!!
-Dont forget to choose number 1, 2, or 3 only
-1
-Debug: please print this
-ID= 1
-ID= 100
-ID= 200
-Debug: please print this
-ID= 200
-
-Do you want to continue press y
-y
-Debug: please print this
-ID= 200
-ID= 300
-ID= 100
-ID= 200
-Please enter the node number, need to be delete it!!
-Dont forget to choose number 1, 2, or 3 only
-2
-Debug: please print this
-ID= 200
-ID= 300
-ID= 200
-Debug: please print this
-ID= 200
-
-Do you want to continue press y
-y
-Debug: please print this
-ID= 200
-ID= 300
-ID= 100
-ID= 200
-Please enter the node number, need to be delete it!!
-Dont forget to choose number 1, 2, or 3 only
-3
-Debug: please print this
-ID= 200
-ID= 300
-ID= 100
-Debug: please print this
-ID= 100
-
-Do you want to continue press y
-no
-Press any key to continue . . .
-
-
-
 
 
 
