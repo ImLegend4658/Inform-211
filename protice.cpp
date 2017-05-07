@@ -129,3 +129,82 @@ int SomeCulclate(double &demon, double &numon, float result){
 	return result;
 
 }
+
+
+=====================================================================================================================================================================
+	
+	===================================
+	===========================================
+	
+	====================
+	
+	#include <iostream>
+using namespace std; 
+/*
+protice with functions codes of fractions 
+#3
+in the structer way. 
+*/
+struct myFract
+{
+	double demon =0 ;
+	double numon =0 ;
+	float result=0;
+};
+void addTwoNum(myFract &num);
+int  SomeCulclate(myFract &iam);
+ int main(){
+	 myFract IamID;
+
+	 addTwoNum(IamID);
+	 SomeCulclate(IamID);
+
+	system("pause"); 
+}
+
+ void addTwoNum(myFract &num){
+
+	 cout << "please enter the Demonater number" << endl;
+	 cin >> num.demon;
+	 
+
+	 cout << "please enter the numonator number" << endl;
+	 cin >> num.numon;
+ }
+
+ int  SomeCulclate(myFract &iam){
+ 	 int choicNum;
+	 cout << "welcome to our program fruction :)" << endl
+		 << "please choice the number what you need" << endl
+		 << " Addition, press number <1>" << endl
+		 << "Subtruction, press number <2>" << endl
+		 << "Mulity, press number <3>" << endl
+		 << "divition, press number <4>" << endl;
+	 cin >> choicNum;
+
+	 switch (choicNum)
+	 {
+	 case 1:
+		 iam.result = (iam.demon / iam.numon) + (iam.numon / iam.demon);
+
+		 cout << iam.result << " Fraction on addtion is: " << endl;
+		 break;
+	 case 2:
+		 iam.result = (iam.demon / iam.numon) - (iam.numon / iam.demon);
+		 cout << iam.result << " Fraction on substract is: " << endl;
+		 break;
+	 case 3:
+		 iam.result = (iam.demon / iam.numon) * (iam.numon / iam.demon);
+		 cout << iam.result << " Fraction on multi is: " << endl;
+		 break;
+	 case 4:
+		 iam.result = (iam.demon / iam.numon) / (iam.numon / iam.demon);
+		 cout << iam.result << " Fraction on multi is: " << endl;
+		 break;
+	 default:
+		 cout << "error" << endl;
+		 exit(1);
+	 }
+	 return iam.result;
+
+ }
