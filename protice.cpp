@@ -137,7 +137,6 @@ int SomeCulclate(double &demon, double &numon, float result){
 	===========================================
 	
 	====================
-	
 	#include <iostream>
 using namespace std; 
 /*
@@ -147,15 +146,16 @@ in the structer way.
 */
 struct myFract
 {
-	double demon =0 ;
-	double numon =0 ;
+	double demon =0;
+	double numon =0;
 	float result=0;
 };
 void addTwoNum(myFract &num);
 int  SomeCulclate(myFract &iam);
+
  int main(){
 	 myFract IamID;
-
+	 // has to use same name structer in oder to call varible from structer.
 	 addTwoNum(IamID);
 	 SomeCulclate(IamID);
 
