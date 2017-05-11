@@ -208,3 +208,122 @@ int  SomeCulclate(myFract &iam);
 	 return iam.result;
 
  }
+===============================================================
+	======================================================
+	
+	
+	
+	#include <iostream>
+using namespace std; 
+/*
+protice with functions codes of fractions 
+#4
+class 
+*/
+class mine
+{
+public:
+	mine();
+	void fraction1(double &demonnew);
+	void fraction2(double &numonu);
+	void setDemon();
+	double getDemon();
+	void setNum();
+	double getNum();
+	void Display();
+ private:
+	double demon;
+	double numon;
+};
+
+ int main(){
+	 mine thieme;
+	
+		 thieme.Display();
+
+	system("pause"); 
+}
+
+ mine::mine()
+ {
+	 demon = 1;
+	 numon = 0;
+ }/// default constructor. 
+
+ void mine::fraction1(double &demonew)
+ {
+	 demon = demonew;
+ }// automatically called from private;
+
+ void mine::fraction2(double &numonu){
+	 numon = numonu;
+ }
+
+ void mine::setDemon(){
+	 double num1;
+
+	 cout << "please enter demon" << endl;
+	 cin >> num1;
+
+	 fraction1(num1);
+ }
+
+ double mine::getDemon(){
+	 return demon;
+ }
+
+ void mine::setNum(){
+	 double num2;
+
+	 cout << "please enter numon sir" << endl;
+	 cin >> num2;
+
+	 fraction2(num2);
+ }
+
+ double mine::getNum(){
+	 return numon;
+ }
+
+ void mine::Display(){
+
+	 setNum();
+	 setDemon();
+	 double enter;
+
+	 int choicNum;
+
+	 cout << "welcome to our program fruction :)" << endl
+		 << "please choice the number what you need" << endl
+		 << " Addition, press number <1>" << endl
+		 << "Subtruction, press number <2>" << endl
+		 << "Mulity, press number <3>" << endl
+		 << "divition, press number <4>" << endl;
+	 cin >> choicNum;
+
+
+
+	 switch (choicNum)
+	 {
+	 case 1:
+		 enter = (getDemon() / getNum()) + (getDemon() / getNum());
+
+		 cout << enter << " Fraction on addtion is: " << endl;
+		 break;
+	 case 2:
+		 enter = (getDemon() / getNum()) - (getDemon() / getNum());
+		 cout << enter << " Fraction on substract is: " << endl;
+		 break;
+	 case 3:
+		 enter = (getDemon() / getNum()) * (getDemon() / getNum());
+		 cout << enter << " Fraction on multi is: " << endl;
+		 break;
+	 case 4:
+		 enter = (getDemon() / getNum()) / (getDemon() / getNum());
+		 cout << enter << " Fraction on multi is: " << endl;
+		 break;
+	 default:
+		 cout << "error" << endl;
+		 exit(1);
+	 }
+ }
