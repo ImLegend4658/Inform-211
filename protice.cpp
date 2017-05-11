@@ -210,15 +210,15 @@ int  SomeCulclate(myFract &iam);
  }
 ===============================================================
 	======================================================
-	
-	
-	
 	#include <iostream>
 using namespace std; 
 /*
 protice with functions codes of fractions 
 #4
 class 
+all copy right@ 2017
+Aziz Aldawk
+5/10/2017
 */
 class mine
 {
@@ -236,6 +236,16 @@ public:
 	double numon;
 };
 
+/*==========================================================
+here is the main: usually here where complier will start. 
+
+mine: is object of the class.
+
+thieme.display;: compiler will prompt and display to the user. 
+
+pause: it will pause program after compiler done::
+
+====================================================================== */
  int main(){
 	 mine thieme;
 	
@@ -257,7 +267,7 @@ public:
 
  void mine::fraction2(double &numonu){
 	 numon = numonu;
- }
+ }// atomatically called from private
 
  void mine::setDemon(){
 	 double num1;
@@ -266,11 +276,11 @@ public:
 	 cin >> num1;
 
 	 fraction1(num1);
- }
+ }// ask user to enter denomnateor.
 
  double mine::getDemon(){
 	 return demon;
- }
+ }// return to vaule in the private:
 
  void mine::setNum(){
 	 double num2;
@@ -279,17 +289,22 @@ public:
 	 cin >> num2;
 
 	 fraction2(num2);
- }
+ }// ask user to enter nomnatoer
 
  double mine::getNum(){
 	 return numon;
- }
+ }// return to the value in the private
 
+ /*==========================================================
+ Display" it will display and prompt to the user after calcluating. 
+ and also it will prompt to user to chose a methed multiplay, additicon.....
+ 
+====================================================================== */
  void mine::Display(){
 
-	 setNum();
-	 setDemon();
-	 double enter;
+	 setNum();    // it will ask user to enter namnoator.
+	 setDemon(); // it will ask user to enter denamonator.
+	 double enter;  // collect the calcul
 
 	 int choicNum;
 
@@ -300,7 +315,7 @@ public:
 		 << "Mulity, press number <3>" << endl
 		 << "divition, press number <4>" << endl;
 	 cin >> choicNum;
-
+	 // prompt and ask user what kind of methad wants before calclating.
 
 
 	 switch (choicNum)
@@ -324,6 +339,6 @@ public:
 		 break;
 	 default:
 		 cout << "error" << endl;
-		 exit(1);
+		 exit(1); // if Error please exit the program. 
 	 }
  }
