@@ -1,20 +1,24 @@
 #include <iostream>
-#include <string>
 #include <fstream>
+#include <string>
 
 using namespace std; 
 
 int main (){
-string name; 
-string iam; 
+
+ifstream input;
+char num;
+
+input.open("README.txt");
+
+while (! input.eof()){
+
+input.get(num);
+
+cout<<num; 
 
 
-ofstream write; 
+}
 
-cout<<"Would you please enter the massege you want? "<<endl; 
-getline(cin,name);
-write.open("SECROT.txt");
-write<<name;
-write.close();
-
+input.close();
 }
