@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ctime>
 /*
-author: Abdulaziz Aldawk
+author: Abdulaziz  
 this program about time to shut down computers or Devices automatically . also it can
 turn it on depand of local time.
 */
