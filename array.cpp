@@ -1,63 +1,59 @@
-#include <iostream>
-#include <cstdlib>
-using namespace std; 
+#include<iostream>
+#include<cstdlib>
+#include<string>
 /*
-name: Aziz Aldawk
-Date: 1/26/2017
-Homework #1
-purpose: a program will fill an array with 1000 random
-         numbers and to print the average of the numbers
-		 in that array. 
+All copy right and you cannot use it for anything use without any permission. 
+Abdulaziz.>
+Please note: do not copy and past without any permission. 
+thanks  
 */
-void randary(int ary[], int arylength);
-int averageary(int ary[], int arylength);
-// Function declaration. 
+using namespace std; 
+
+
+void rand ( int arr[], int size);
+void name( int arr[], int size);
 int main(){
 
-	int const arylength = 1000; 
-	int ary[arylength];
-	int result;
-	//Declare varibles. 
+const int size =100;
+int arr[size];
 
-	randary(ary, arylength);
-	result = averageary(ary, arylength);
-	// function call.
-	cout << "The average is: " << result << endl; 
-	// it shows the resutl the average of the number in the array.
-
-//	system("pause"); // Please pause the program.
-}// End of main.
-
-/*==================================================
-purpose of the Randary function:
-It fills an array with 1000 random numbers.
-
-===================================================*/
-
-void randary(int ary[], int arylength){
-
-	for (int i = 0; i < arylength; i++){
-
-		ary[i] = rand()% 50 ;
-	}
+rand(arr,size);
+name(arr,size);
 }
 
-/*==================================================
-purpose of the averageary function:
-it will print the average of the numbers 
-in that array.
-===================================================*/
-int averageary(int ary[], int arylength){
-	
-	int average; 
-	int sum= 0;
+void rand(int arr[],  int size)
+{
 
-	for (int i = 0; i < arylength; i++){
+for ( int i=0; i<size;i++)
+{
 
-		sum += ary[i];
-
-	}
-	average = sum / arylength;
-
-	return average;
+arr[i] = rand();
+cout<<arr[i]<<endl; 
 }
+
+}
+
+void name( int arr[], int size)
+{
+
+string thename;
+
+for (int i=0; i<size;i++)
+{
+
+cout<<"could you please enter your name "<<endl; 
+getline(cin,thename);
+
+cout<<"your name is "<<thename<<" and id is "<<arr[i]<<endl; 
+
+}
+
+
+}
+
+
+
+
+
+
+
