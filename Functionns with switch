@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+void sumN(int sum);
+void subN(int sub);
+void miltN(int milt);
+int main()
+{
+
+int sum;
+int sub;
+int milt;
+
+int number;
+
+cout<<"to sum enter number 1"<<endl
+     <<"to sub enter number 2"<<endl
+     <<"to miltplay enter number 3"<<endl;
+     cin>>number;
+
+     switch(number)
+{
+case 1:
+sumN(sum);
+break;
+case 2:
+subN(sub);
+break;
+case 3:
+miltN(milt);
+break;
+}
+}
+
+void sumN(int sum)
+{
+int x, y;
+cout<<"enter first and second number to sum"<<endl;
+cin>>x>>y;
+
+sum= x+y;
+
+cout<<"your result is: "<<sum<<endl;
+}
+
+void subN(int sub)
+{
+int x, y;
+cout<<"enter first and second number to substract"<<endl;
+cin>>x>>y;
+
+sub= x-y;
+cout<<"your result is: "<<sub<<endl;
+
+}
+
+void miltN(int milt)
+{
+int x, y;
+cout<<"enter first and second number to miltplay numbers"<<endl;
+cin>>x>>y;
+
+
+milt = x*y;
+
+cout<<"your result is: "<<milt<<endl;
+
+}
