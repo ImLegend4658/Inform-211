@@ -1,0 +1,45 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+struct myclass
+{
+
+string item;
+const double discount = 0.08;
+double price;
+int result;
+};
+
+void inInfo(myclass &head);
+void outInfo(myclass head);
+int main()
+{
+myclass head;
+
+inInfo(head);
+outInfo(head);
+
+ }
+void inInfo(myclass &head)
+{
+
+cout<<"Welcome to our store"<<endl;
+
+cout<<"what is item or scan it"<<endl;
+getline(cin, head.item);
+
+cout<<"what is price? "<<endl;
+cin>> head.price;
+head.result= head.discount * head.price;
+}
+
+void outInfo(myclass head)
+{
+cout<<"the item was: "<<head.item<<" the price before discound: "<<head.price<<endl;
+
+
+cout<<"price after discound 65% is : "<<head.result<<endl;
+
+
+}
