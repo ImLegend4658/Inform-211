@@ -1,0 +1,50 @@
+// All copyright to Abdulaziz and you cannot use it without any promission. 
+void adda();
+void mult();
+int main(){
+
+	int num; 
+	cout << "to chose addation <1>"<<endl
+		<< "to choes multiplay <2>" << endl;
+	cin >> num; 
+	switch (num)
+	{
+	case 1:
+		adda();
+		break;
+	case 2:
+		mult();
+		break;
+	default: 
+		cout << "That was error buddy :D" << endl; 
+
+	}
+
+	system("pause"); // please pause program
+}
+
+void adda()
+{
+
+	int sum1, sum2, result;
+	cout << "Please enter two numbers to add them togther" << endl; 
+	cin >> sum1 >> sum2;
+
+	result = sum1 + sum2;
+
+	cout << sum1 << " + " << sum2 << "= " << result << endl;
+}
+
+
+void mult(){
+
+	int mult1, mult2, result;
+
+	cout << "enter two number to multplay" << endl; 
+	cin >> mult1 >> mult2;
+
+	result = mult1 * mult2;
+
+	cout << mult1 << " * " << mult2 << "= " <<result<<endl; 
+
+}
