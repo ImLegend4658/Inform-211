@@ -1,0 +1,118 @@
+#include <iostream>
+#include <cstdlib>
+#include <string>
+using namespace std;
+
+class myStudent
+{
+public:
+
+
+void myStudent1(string StudentNAme);
+void myStudent2(double studentGPA);
+void myStudent3(int THEID);
+
+void setMyS();
+string getMyS();
+
+void setMyS2();
+double getMyS2();
+
+void setMyS3();
+int getMyS3();
+
+void display();
+
+private:
+double gpa;
+string name;
+int id;
+};
+
+int main()
+{
+
+    myStudent thesomething;
+    
+  thesomething.display();
+ 
+
+
+ }
+
+
+
+void myStudent::myStudent1(string StudentNAme)
+{
+name = StudentNAme;
+}
+
+void myStudent::myStudent2(double studentGPA)
+{
+gpa = studentGPA;
+}
+
+void myStudent::myStudent3(int THEID){
+id = THEID;
+}
+
+
+void myStudent::setMyS(){
+
+string YourStudentNAME;
+
+cout<<"Enter Student name "<<endl;
+getline(cin, YourStudentNAME);
+
+myStudent1(YourStudentNAME);
+}
+
+string myStudent::getMyS(){
+return name;
+}
+
+
+void myStudent::setMyS2()
+{
+double SGPA;
+
+cout<<"Enter the final GPA student "<<endl;
+cin>> SGPA;
+
+myStudent2(SGPA);
+
+}
+
+double myStudent::getMyS2(){
+
+return gpa;
+
+}
+
+void myStudent::setMyS3(){
+
+int Theid[30];
+
+for (int i =0; i<30;i++)
+{
+Theid[i] = rand();
+myStudent3(Theid[i]);
+}
+}
+
+int myStudent::getMyS3(){
+return id;
+
+}
+
+void myStudent::display(){
+
+setMyS();
+setMyS2();
+setMyS3();
+
+ cout<<"Your student's name: "<< getMyS()<< " his GPA is "<< getMyS2() <<" his ID: "<<getMyS3()<<endl;
+
+ 
+
+}
