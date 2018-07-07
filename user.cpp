@@ -11,7 +11,7 @@ using namespace std;
 	        7/6/2018 7:07 pm.
 
 ++++++++++++++++ The purpose of this program ++++++++++++++++++
-::: This example of being used to seal our information by hackers. 
+::: This example of being used to steal our information by hackers. 
     Also, we need to be more carefull when you get string emaill or 
    even link from any social media. 
    some of them tells you, you have to enter user and pass bla bla bla
