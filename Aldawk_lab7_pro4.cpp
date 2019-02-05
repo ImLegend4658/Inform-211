@@ -7,29 +7,34 @@ Purpose : This program to generate the results for fifty rolls of a die. The pro
 */
 #include <iostream>
 #include <cstdlib>
+#include<ctime>
 using namespace std;
 
 double RollDie(double Num);
 //function
 int main(){
 
-	int num;
-	//declare variables.
-	cout << "Please enter number that you want to roll die it " << endl;
-	cin >> num;
-	//prompt and receive. 
+        int num;
+        //declare variables.
+        cout << "Please enter number that you want to roll die it " << endl;
+        cin >> num;
+        //prompt and receive. 
 
-	RollDie(num);
-	//receive from function. 
+        RollDie(num);
+        //receive from function. 
 
-	system("pause");
+     //   system("pause");
 }
 
 double RollDie(double Num)
 {
-	int Z;
-	for (Z = 0; Z < 10; Z++)
-		cout << rand() << endl;
+        int Z;
+        int min =1;
+        int max =6;
+        srand(time(0));
 
-	return 0;
+        for (Z = 0; Z < 10; Z++)
+                cout << rand() % (max-min +1)+min << endl;
+
+        return 0;
 }
