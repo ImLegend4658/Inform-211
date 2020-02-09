@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+// all copyright reserved to me as Aziz. 
+I dont allow you to copy it. 
 
 using namespace std;
 void sumN(int sum);
