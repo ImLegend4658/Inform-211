@@ -1,8 +1,11 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-// Whatever or whoever you are, DONT DELETE THIS FILE, I REPEAT
-// DONT DELETE THIS FILE BECAUSE I NEED TO KNOW MY CODE AND WHAT I HAVE WRITTEND HERE SO BE NICE AND KINE :)
+/*
+Author: Abdulaziz
+This is program to let you create a file after input
+Also, you can name the file too. 
+*/
 using namespace std; 
 
 int main(){
@@ -12,9 +15,10 @@ getline(cin,line);
 // in order to write whatever you want you have you ask user first
 // that value can transfer to inside the file. 
 ofstream readme;
-
-
-readme.open("README.txt");
+string filename;
+cout<<"Enter filename: "<<endl;
+cin>>filename;
+readme.open(filename + ".txt");
 readme<<line<<endl; 
 readme.close();
 
